@@ -38,3 +38,6 @@ __pycache__/
 *.local
 *.sqlite
 *.db
+
+# Local course submission text (kept outside GitHub)
+submission/

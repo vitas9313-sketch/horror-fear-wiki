@@ -1,21 +1,82 @@
-# HORROR LAB｜LLM Wiki
+# HORROR LAB｜恐怖心理與恐怖敘事 LLM Wiki
 
-本專案以「恐怖心理與恐怖敘事中的觀眾反應」為主題，將可追溯來源整理成 Wiki 草稿，並用 Wiki 產生入門教學型 HTML 簡報。
+## 1. LLM Wiki 主題與簡介
 
-## 目前成果
+本 Wiki 的主題是「恐怖心理與恐怖敘事中的觀眾反應」。內容整理恐怖作品如何透過聲音、未知感、預測誤差與情緒設計，引發觀眾的恐懼、興奮與享受。
 
-- 5 篇 PDF 已登錄並通過標頭、頁數與 SHA-256 檢查。
-- 5 篇來源各自對應 1 篇 Wiki 草稿，詳見 [`workflow/ingest-manifest.json`](./workflow/ingest-manifest.json)。
-- [`slides/horror-lab-research.html`](./slides/horror-lab-research.html) 為可直接瀏覽的教學簡報。
-- [`workflow/graph.json`](./workflow/graph.json) 與 [`workflow/loop-checklist.md`](./workflow/loop-checklist.md) 說明資料取得、驗證、整理與生成流程。
-- [`reports/submission-notes.md`](./reports/submission-notes.md) 可作為課程作業提交說明。
+本專案以五篇學術資料為基礎，建立可追溯的 Wiki 草稿，並把研究內容轉化為適合初學者閱讀的教學簡報。
 
-## 目錄
+## 2. LLM Wiki 成果
 
-- `raw/papers/`：原始 PDF；只保留來源檔，不在此直接改寫。
-- `wiki/`：帶有來源、證據與限制段落的 Wiki 草稿。
-- `workflow/`：來源登錄、ingest manifest、Graph 與 Loop 檢查。
-- `slides/`：教學型 HTML 簡報。
-- `reports/`：候選來源與提交驗收說明。
+Wiki 成果位於 [`wiki/`](./wiki/) 資料夾，共有五篇條目：
 
-完整工作規則請先閱讀 [`AGENTS.md`](./AGENTS.md)。
+- 聲音與恐怖情緒
+- 預測處理與恐怖片
+- 恐怖場景中的興奮與享受
+- 恐怖電影心理反應研究綜述
+- Need for Affect 與恐怖／戲劇觀影
+
+每篇條目都包含定義、核心敘述、證據與引用、限制，以及延伸連結。五篇來源與檔案驗證資料記錄於 [`workflow/ingest-manifest.json`](./workflow/ingest-manifest.json)。
+
+## 3. 教學 HTML 簡報
+
+▶ [開啟教學 HTML 簡報：為什麼人會享受恐怖？](./slides/horror-lab-research.html)
+
+簡報以初學者為對象，依序說明：
+
+1. 害怕與喜歡可以同時存在。
+2. 預測處理如何協助理解恐怖感受。
+3. 五篇研究各自回答的問題。
+4. 恐懼、興奮、享受與後設情緒的差異。
+5. 研究結論的適用範圍與限制。
+
+## 4. Loop／Graph 設計
+
+### 流程
+
+```text
+取得資料
+  ↓
+登錄作者、年份、DOI 與來源網址
+  ↓
+檢查 PDF 標頭、頁數與 SHA-256
+  ↓
+受控 ingest，建立 Wiki 條目
+  ↓
+整理研究重點與限制
+  ↓
+逐項回查簡報主張與來源
+  ↓
+產生並檢查 HTML 簡報
+```
+
+### Graph 設計
+
+Graph 的節點包含「來源」「研究概念」「Wiki 條目」「檔案驗證」與「投影片主張」；邊則標示「支持主題」「提出框架」「測量」「綜述」或「通過檢查」。因此每一個簡報主張都能回到 Wiki 條目與原始來源，而不是只建立沒有意義的名稱連線。
+
+### 哪些步驟會重複？
+
+- 每次新增資料都重新檢查來源、格式、頁數與 SHA-256。
+- 每次新增或修改 Wiki 條目都重新檢查引用是否真的支持敘述。
+- 每次修改簡報都重新確認主張、限制、可讀性與瀏覽結果。
+
+這樣設計是為了避免錯誤檔案、未查證敘述或過度延伸的研究結論進入最後簡報。
+
+## 5. 實際執行結果與檢查紀錄
+
+- 已完成五篇資料的受控 ingest。
+- 五個 PDF 均確認以 `%PDF-` 開頭，並完成頁數與 SHA-256 記錄。
+- 五篇來源各自對應一篇 Wiki 條目。
+- HTML 簡報已以瀏覽器開啟檢查，可正常閱讀，且不依賴外部圖片或腳本。
+- 已執行 `git diff --check`；文字檔檢查通過，PDF 維持二進位檔保存。
+- 檢查結果與來源雜湊記錄於 [`workflow/ingest-manifest.json`](./workflow/ingest-manifest.json)。
+
+## 6. 反思與流程調整
+
+最常出錯的節點是「資料下載後的檔案驗證」。曾遇到錯誤網址回傳 404 或 Cloudflare HTML，而不是 PDF。
+
+因此我把檢查往前移到 ingest 之前：先確認 `%PDF-` 標頭與檔案大小，再確認頁數、計算 SHA-256，最後才允許資料進入 Wiki。這項調整也反映在 Graph 的檔案驗證 gate 中，避免錯誤檔案污染 Wiki 或簡報。
+
+---
+
+本專案 GitHub Repository：[horror-fear-wiki](https://github.com/vitas9313-sketch/horror-fear-wiki)
