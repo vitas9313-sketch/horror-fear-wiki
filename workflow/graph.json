@@ -4,6 +4,7 @@
   "nodes":[
     {"id":"source-set","type":"input","label":"Five verified PDF sources"},
     {"id":"research-summary","type":"ai-step","label":"AI research summary"},
+    {"id":"wiki-depth-check","type":"human-check","label":"Wiki depth, case and data check"},
     {"id":"evidence-review","type":"human-check","label":"Human evidence and limitation review"},
     {"id":"slide-outline","type":"ai-step","label":"AI slide outline"},
     {"id":"outline-review","type":"human-check","label":"Human teaching-order review"},
@@ -22,7 +23,8 @@
   "edges":[
     {"from":"source-set","to":"process-file-check","relation":"must-pass"},
     {"from":"process-file-check","to":"research-summary","relation":"enables"},
-    {"from":"research-summary","to":"evidence-review","relation":"reviewed-by-human"},
+    {"from":"research-summary","to":"wiki-depth-check","relation":"reviewed-for-depth"},
+    {"from":"wiki-depth-check","to":"evidence-review","relation":"enables"},
     {"from":"evidence-review","to":"slide-outline","relation":"enables"},
     {"from":"slide-outline","to":"outline-review","relation":"reviewed-by-human"},
     {"from":"outline-review","to":"slide-content","relation":"enables"},
@@ -31,6 +33,7 @@
     {"from":"html-output","to":"browser-check","relation":"reviewed-by-human"},
     {"from":"browser-check","to":"slide-content","relation":"rollback-on-error"},
     {"from":"claim-check","to":"research-summary","relation":"rollback-on-missing-evidence"},
+    {"from":"wiki-depth-check","to":"research-summary","relation":"rollback-on-summary-only"},
     {"from":"graph-prompt","to":"slide-outline","relation":"constrains-teaching-flow"},
     {"from":"source-set","to":"topic-psychology","relation":"supports-topic"},
     {"from":"source-set","to":"topic-sound","relation":"supports-topic"},
