@@ -22,11 +22,11 @@ Wiki 成果位於 [`wiki/`](./wiki/) 資料夾，共有五篇條目。每篇包�
 
 每篇論文各自製作一份五頁、可用按鈕或方向鍵播放的教學簡報：
 
-1. [Paper 1｜聲音與恐怖情緒](./slides/paper-1.html)
-2. [Paper 2｜預測處理與恐怖片](./slides/paper-2.html)
-3. [Paper 3｜恐怖場景中的興奮與享受](./slides/paper-3.html)
-4. [Paper 4｜恐怖電影心理反應研究綜述](./slides/paper-4.html)
-5. [Paper 5｜Need for Affect 與恐怖觀影](./slides/paper-5.html)
+1. [Paper 1｜聲音與恐怖情緒](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-1.html)
+2. [Paper 2｜預測處理與恐怖片](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-2.html)
+3. [Paper 3｜恐怖場景中的興奮與享受](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-3.html)
+4. [Paper 4｜恐怖電影心理反應研究綜述](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-4.html)
+5. [Paper 5｜Need for Affect 與恐怖觀影](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-5.html)
 
 [五份簡報總覽頁](./slides/horror-lab-research.html)
 
