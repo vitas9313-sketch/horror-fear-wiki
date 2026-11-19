@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "stage": "controlled-ingest",
   "created": "2026-11-19",
-  "status": "draft-awaiting-review",
+  "status": "completed-for-submission",
   "source_directory": "raw/papers",
   "source_count": 5,
   "wiki_entries_created": 5,

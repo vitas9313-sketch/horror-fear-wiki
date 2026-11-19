@@ -4,7 +4,7 @@
 
 本 Wiki 的主題是「恐怖心理與恐怖敘事中的觀眾反應」。內容整理恐怖作品如何透過聲音、未知感、預測誤差與情緒設計，引發觀眾的恐懼、興奮與享受。
 
-本專案以五篇學術資料為基礎，建立可追溯的 Wiki 草稿，並將研究內容轉化為適合初學者閱讀的教學型 HTML 簡報。
+本專案以五篇學術資料為基礎，建立可追溯的 Wiki 條目，並將研究內容轉化為適合初學者閱讀的教學型 HTML 簡報。
 
 ## 2. LLM Wiki 成果
 
@@ -20,9 +20,15 @@ Wiki 成果位於 [`wiki/`](./wiki/) 資料夾，共有五篇條目。每篇包�
 
 ## 3. 教學 HTML 簡報
 
-▶ [開啟教學 HTML 簡報：為什麼人會享受恐怖？](./slides/horror-lab-research.html)
+每篇論文各自製作一份五頁、可用按鈕或方向鍵播放的教學簡報：
 
-簡報以初學者為對象，依序說明害怕與喜歡可以同時存在、預測處理、五篇研究的角色，以及恐懼、興奮、享受與後設情緒的差異。
+1. [Paper 1｜聲音與恐怖情緒](./slides/paper-1.html)
+2. [Paper 2｜預測處理與恐怖片](./slides/paper-2.html)
+3. [Paper 3｜恐怖場景中的興奮與享受](./slides/paper-3.html)
+4. [Paper 4｜恐怖電影心理反應研究綜述](./slides/paper-4.html)
+5. [Paper 5｜Need for Affect 與恐怖觀影](./slides/paper-5.html)
+
+[五份簡報總覽頁](./slides/horror-lab-research.html)
 
 ## 4. Loop／Graph 設計
 

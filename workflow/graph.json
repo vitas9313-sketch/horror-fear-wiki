@@ -1,6 +1,6 @@
 {
   "schema_version":"1.0",
-  "status":"draft",
+  "status":"completed-for-submission",
   "nodes":[
     {"id":"source-set","type":"input","label":"Five verified PDF sources"},
     {"id":"research-summary","type":"ai-step","label":"AI research summary"},

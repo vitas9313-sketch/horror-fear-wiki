@@ -2,7 +2,7 @@
 
 ## 狀態
 
-Draft；依 P-004 的 submitted version 與機構摘要整理，研究結果限於該研究的觀影情境。
+已完成教學整理；依 P-004 的 submitted version 與機構摘要整理，研究結果限於該研究的觀影情境。
 
 ## 定義
 
