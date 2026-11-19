@@ -10,11 +10,11 @@
 
 Wiki 成果位於 [`wiki/`](./wiki/) 資料夾，共有五篇條目。每篇包含定義、核心敘述、證據與引用、限制及延伸連結。
 
-- 聲音與恐怖情緒
-- 預測處理與恐怖片
-- 恐怖場景中的興奮與享受
-- 恐怖電影心理反應研究綜述
-- Need for Affect 與恐怖／戲劇觀影
+1. [Paper 1｜聲音與恐怖情緒](./wiki/paper-1-sound-nonlinear-analogues-film-soundtracks.md)
+2. [Paper 2｜預測處理與恐怖片](./wiki/paper-2-predictive-processing-horror-engagement.md)
+3. [Paper 3｜恐怖場景中的興奮與享受](./wiki/paper-3-excitement-enjoyment-horror-scenes.md)
+4. [Paper 4｜恐怖電影心理反應研究綜述](./wiki/paper-4-horror-psychology-review.md)
+5. [Paper 5｜Need for Affect 與恐怖／戲劇觀影](./wiki/paper-5-need-for-affect-horror-drama.md)
 
 五篇來源與檔案驗證資料記錄於 [`workflow/ingest-manifest.json`](./workflow/ingest-manifest.json)。
 

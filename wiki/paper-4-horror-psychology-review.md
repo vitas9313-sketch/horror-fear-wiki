@@ -23,5 +23,5 @@ Martin（2019）綜合心理學、傳播研究、發展研究與媒體研究，�
 
 ## 延伸連結
 
-- [predictive-processing-horror-engagement.md](./predictive-processing-horror-engagement.md)
-- [excitement-enjoyment-horror-scenes.md](./excitement-enjoyment-horror-scenes.md)
+- [paper-2-predictive-processing-horror-engagement.md](./paper-2-predictive-processing-horror-engagement.md)
+- [paper-3-excitement-enjoyment-horror-scenes.md](./paper-3-excitement-enjoyment-horror-scenes.md)

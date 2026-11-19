@@ -8,10 +8,10 @@
   "wiki_entries_created": 5,
   "full_text_downloaded_by_agent": true,
   "items": [
-    {"source_id":"P-000","file":"raw/papers/000.pdf","doi":"10.1098/rsbl.2010.0333","sha256":"ed232791490a744fe887c6ac6b80df49c93b6f5db19a68c52878e1eb25ba4280","pages":4,"entry":"wiki/sound-nonlinear-analogues-film-soundtracks.md"},
-    {"source_id":"P-001","file":"raw/papers/001.pdf","doi":"10.1098/rstb.2022.0425","sha256":"e75f8a309e34980a1332093e2d0238c84abf9ff3b8b5781ad26ce23e203f9ab1","pages":11,"entry":"wiki/predictive-processing-horror-engagement.md"},
-    {"source_id":"P-002","file":"raw/papers/002.pdf","doi":"10.1038/s41598-024-53533-y","sha256":"223d24697fcff937616c8d36094273241b0f46e704003b5b94e00c7312324a5c","pages":8,"entry":"wiki/excitement-enjoyment-horror-scenes.md"},
-    {"source_id":"P-003","file":"raw/papers/003.pdf","doi":"10.3389/fpsyg.2019.02298","sha256":"ddb22951b898108b8bf55b19215fb6fbc1c26735d6a821bf4d5d363a39a8d71e","pages":22,"entry":"wiki/horror-psychology-review.md"},
-    {"source_id":"P-004","file":"raw/papers/004.pdf","doi":"10.1177/0093650209356441","sha256":"2909d2dd684f66234d237b64b4ac2959bc1545c1858e270595e1302b82e18cd","pages":24,"entry":"wiki/need-for-affect-horror-drama.md"}
+    {"source_id":"P-000","file":"raw/papers/000.pdf","doi":"10.1098/rsbl.2010.0333","sha256":"ed232791490a744fe887c6ac6b80df49c93b6f5db19a68c52878e1eb25ba4280","pages":4,"entry":"wiki/paper-1-sound-nonlinear-analogues-film-soundtracks.md"},
+    {"source_id":"P-001","file":"raw/papers/001.pdf","doi":"10.1098/rstb.2022.0425","sha256":"e75f8a309e34980a1332093e2d0238c84abf9ff3b8b5781ad26ce23e203f9ab1","pages":11,"entry":"wiki/paper-2-predictive-processing-horror-engagement.md"},
+    {"source_id":"P-002","file":"raw/papers/002.pdf","doi":"10.1038/s41598-024-53533-y","sha256":"223d24697fcff937616c8d36094273241b0f46e704003b5b94e00c7312324a5c","pages":8,"entry":"wiki/paper-3-excitement-enjoyment-horror-scenes.md"},
+    {"source_id":"P-003","file":"raw/papers/003.pdf","doi":"10.3389/fpsyg.2019.02298","sha256":"ddb22951b898108b8bf55b19215fb6fbc1c26735d6a821bf4d5d363a39a8d71e","pages":22,"entry":"wiki/paper-4-horror-psychology-review.md"},
+    {"source_id":"P-004","file":"raw/papers/004.pdf","doi":"10.1177/0093650209356441","sha256":"2909d2dd684f66234d237b64b4ac2959bc1545c1858e270595e1302b82e18cd","pages":24,"entry":"wiki/paper-5-need-for-affect-horror-drama.md"}
   ]
 }

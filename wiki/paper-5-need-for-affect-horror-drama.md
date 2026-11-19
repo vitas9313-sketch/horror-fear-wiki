@@ -23,5 +23,5 @@ Bartsch、Appel 與 Storch（2010）以電影院實地研究比較恐怖／驚�
 
 ## 延伸連結
 
-- [horror-psychology-review.md](./horror-psychology-review.md)
-- [excitement-enjoyment-horror-scenes.md](./excitement-enjoyment-horror-scenes.md)
+- [paper-4-horror-psychology-review.md](./paper-4-horror-psychology-review.md)
+- [paper-3-excitement-enjoyment-horror-scenes.md](./paper-3-excitement-enjoyment-horror-scenes.md)
