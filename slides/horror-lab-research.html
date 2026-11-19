@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HORROR LAB｜研究來源導覽</title>
+  <style>
+    :root { --ink:#f4f0e8; --muted:#b7b0a4; --blood:#d44b45; --panel:#171817; --bg:#0b0d0c; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at 70% 20%, #2a1918 0, var(--bg) 42%); color:var(--ink); font-family:Georgia, "Noto Serif TC", serif; }
+    main { max-width:1100px; margin:auto; padding:7vw 7vw 10vw; }
+    .eyebrow { color:var(--blood); letter-spacing:.18em; text-transform:uppercase; font:700 .75rem system-ui,sans-serif; }
+    h1 { max-width:780px; font-size:clamp(2.7rem,7vw,6.5rem); line-height:.95; margin:.5rem 0 1.5rem; }
+    h2 { font-size:clamp(1.7rem,3vw,3rem); margin-top:0; }
+    p, li { color:var(--muted); font-size:1.05rem; line-height:1.75; }
+    .deck { min-height:90vh; display:grid; align-content:center; }
+    .rule { border:0; border-top:1px solid #46312e; margin:3rem 0; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+    .card { background:linear-gradient(145deg,var(--panel),#111211); border:1px solid #3b2b2a; border-radius:14px; padding:1.4rem; min-height:250px; }
+    .card strong { color:var(--ink); display:block; margin:.5rem 0 1rem; font-size:1.15rem; }
+    .tag { color:var(--blood); font:700 .75rem system-ui,sans-serif; letter-spacing:.12em; }
+    a { color:#f0a59e; }
+    footer { border-top:1px solid #46312e; margin-top:5rem; padding-top:1.5rem; }
+    @media (max-width:760px) { .grid { grid-template-columns:1fr; } p,li { font-size:1rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="deck">
+      <div class="eyebrow">HORROR LAB · source review</div>
+      <h1>恐怖為何<br>令人著迷？</h1>
+      <p>三篇已登錄的研究，從聲音、預測處理與觀眾情緒，提供可追溯的研究入口。</p>
+      <p class="eyebrow">DRAFT · 待全文逐段複核</p>
+    </section>
+
+    <hr class="rule">
+    <section>
+      <div class="eyebrow">01 · 三條證據路徑</div>
+      <h2>從聲音刺激，到恐懼經驗</h2>
+      <div class="grid">
+        <article class="card"><span class="tag">P-000 · SOUND</span><strong>非線性聲音類比</strong><p>研究將電影聲軌中的非線性聲學特徵與情緒操控問題連結，恐怖片的噪聲與尖叫是重要觀察對象。</p><a href="https://doi.org/10.1098/rsbl.2010.0333">查看 DOI</a></article>
+        <article class="card"><span class="tag">P-001 · PSYCHOLOGY</span><strong>不確定性與預測處理</strong><p>理論文章提出預測處理框架，嘗試解釋恐怖內容如何在恐懼與趣味之間形成可承受的參與區間。</p><a href="https://doi.org/10.1098/rstb.2022.0425">查看 DOI</a></article>
+        <article class="card"><span class="tag">P-002 · AUDIENCE</span><strong>興奮與享受的區分</strong><p>研究以 558 位參與者評估恐怖場景，將 excitement 與 enjoyment 視為相關但不同的結果。</p><a href="https://doi.org/10.1038/s41598-024-53533-y">查看 DOI</a></article>
+      </div>
+    </section>
+
+    <hr class="rule">
+    <section>
+      <div class="eyebrow">02 · 讀取限制</div>
+      <h2>證據有邊界，草稿也要誠實</h2>
+      <ul>
+        <li>三篇來源已保存於 <code>raw/papers/</code>，並以 SHA-256 登錄。</li>
+        <li>目前條目依書目與摘要建立；具體頁碼、表格與統計細節仍待逐段全文複核。</li>
+        <li>這份簡報不取代來源，也不把研究結果改寫成所有觀眾都適用的定律。</li>
+      </ul>
+    </section>
+
+    <footer><p>HORROR LAB｜LLM Wiki · research draft · 2026-11-19</p></footer>
+  </main>
+</body>
+</html>

@@ -22,6 +22,19 @@ HORROR LAB｜LLM Wiki 是一個以恐怖文化、恐怖敘事與作品研究為�
 - `.gitignore`：暫存檔、機密資料與建置產物排除規則。
 - `raw/`、`wiki/`、`workflow/`、`slides/`、`reports/`：後續階段使用的空目錄。
 
-目前尚未執行：文獻搜尋、下載、ingest、Wiki 條目、HTML 簡報、AI 圖像、完整 Graph / Loop 程式、commit 或 push。
+### 第二階段：候選資料與受控來源整理
+
+已完成：
+
+- `reports/candidate-sources.md`：候選學術資料清單。
+- `raw/papers/`：三篇使用者提供的 PDF 原始檔案。
+- `workflow/source-register.md`：來源、版本、授權、頁數與 SHA-256 登錄。
+- `workflow/ingest-manifest.json`：受控 ingest 對應表。
+- `wiki/`：三篇依摘要與書目建立的草稿條目。
+- `workflow/graph.json`：具證據邊界的關係草稿。
+- `workflow/loop-checklist.md`：來源與條目重複檢查流程。
+- `slides/horror-lab-research.html`：以已查證內容製作的研究來源導覽草稿。
+
+目前限制：三篇 Wiki 條目仍待逐段全文複核；尚未建立完整自動化 Graph / Loop 執行程式、部署網站或建立正式發布版本。所有新增檔案目前尚未 commit 或 push。
 
 詳細工作規則請先閱讀 [`AGENTS.md`](./AGENTS.md)。

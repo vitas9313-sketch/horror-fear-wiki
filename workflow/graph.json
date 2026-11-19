@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "status": "draft",
+  "nodes": [
+    {"id": "topic-sound", "type": "topic", "label": "影像、聲音與感官設計"},
+    {"id": "topic-psychology", "type": "topic", "label": "恐怖心理"},
+    {"id": "source-p000", "type": "source", "label": "P-000: Film soundtracks and nonlinear analogues"},
+    {"id": "source-p001", "type": "source", "label": "P-001: Predictive processing and horror films"},
+    {"id": "source-p002", "type": "source", "label": "P-002: Excitement and enjoyment in horror scenes"},
+    {"id": "concept-nonlinearity", "type": "concept", "label": "非線性聲音類比"},
+    {"id": "concept-uncertainty", "type": "concept", "label": "不確定性與預測處理"},
+    {"id": "concept-recreational-fear", "type": "concept", "label": "娛樂性恐懼"}
+  ],
+  "edges": [
+    {"from": "source-p000", "to": "topic-sound", "relation": "supports-topic", "evidence": "DOI 10.1098/rsbl.2010.0333"},
+    {"from": "source-p000", "to": "concept-nonlinearity", "relation": "studies", "evidence": "abstract and source record"},
+    {"from": "concept-nonlinearity", "to": "topic-psychology", "relation": "may-affect", "evidence": "source abstract; causal scope limited"},
+    {"from": "source-p001", "to": "topic-psychology", "relation": "supports-topic", "evidence": "DOI 10.1098/rstb.2022.0425"},
+    {"from": "source-p001", "to": "concept-uncertainty", "relation": "proposes-framework", "evidence": "source abstract"},
+    {"from": "source-p002", "to": "topic-psychology", "relation": "supports-topic", "evidence": "DOI 10.1038/s41598-024-53533-y"},
+    {"from": "source-p002", "to": "concept-recreational-fear", "relation": "measures", "evidence": "abstract; N=558"},
+    {"from": "concept-uncertainty", "to": "concept-recreational-fear", "relation": "offers-interpretation", "evidence": "cross-source link; requires later synthesis"}
+  ]
+}
