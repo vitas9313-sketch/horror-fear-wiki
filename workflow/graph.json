@@ -9,14 +9,15 @@
     {"id":"outline-review","type":"human-check","label":"Human teaching-order review"},
     {"id":"slide-content","type":"ai-step","label":"Slide-by-slide content"},
     {"id":"claim-check","type":"human-check","label":"Claim, citation and logic check"},
-    {"id":"html-output","type":"output","label":"Teaching HTML slides"},
+    {"id":"html-output","type":"output","label":"One integrated teaching HTML deck"},
     {"id":"browser-check","type":"human-check","label":"Browser and accessibility check"},
     {"id":"topic-psychology","type":"topic","label":"Horror psychology and audience response"},
     {"id":"topic-sound","type":"topic","label":"Sound and sensory design"},
     {"id":"concept-uncertainty","type":"concept","label":"Prediction error and uncertainty"},
     {"id":"concept-arousal","type":"concept","label":"Arousal, fear and enjoyment"},
     {"id":"concept-meta-emotion","type":"concept","label":"Meta-emotion"},
-    {"id":"process-file-check","type":"gate","label":"PDF header, page count and SHA-256 check"}
+    {"id":"process-file-check","type":"gate","label":"PDF header, page count and SHA-256 check"},
+    {"id":"graph-prompt","type":"instruction","label":"Dark gothic Graph generation prompt"}
   ],
   "edges":[
     {"from":"source-set","to":"process-file-check","relation":"must-pass"},
@@ -30,6 +31,7 @@
     {"from":"html-output","to":"browser-check","relation":"reviewed-by-human"},
     {"from":"browser-check","to":"slide-content","relation":"rollback-on-error"},
     {"from":"claim-check","to":"research-summary","relation":"rollback-on-missing-evidence"},
+    {"from":"graph-prompt","to":"slide-outline","relation":"constrains-teaching-flow"},
     {"from":"source-set","to":"topic-psychology","relation":"supports-topic"},
     {"from":"source-set","to":"topic-sound","relation":"supports-topic"},
     {"from":"source-set","to":"concept-uncertainty","relation":"contains-evidence"},

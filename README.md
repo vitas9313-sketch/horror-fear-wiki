@@ -18,17 +18,14 @@ Wiki 成果位於 [`wiki/`](./wiki/) 資料夾，共有五篇條目。每篇包�
 
 五篇來源與檔案驗證資料記錄於 [`workflow/ingest-manifest.json`](./workflow/ingest-manifest.json)。
 
-## 3. 教學 HTML 簡報
+## 3. 教學 HTML 簡報（主要繳交成果）
 
-每篇論文各自製作一份五頁、可用按鈕或方向鍵播放的教學簡報：
+依老師規定，本專案將五篇資料整合成**一份**教學型 HTML 簡報，主題是「為什麼人會享受恐怖？」。簡報依序介紹聲音設計、預測處理、恐怖片段數據、心理研究回顧與 Need for Affect，讓不熟悉主題的讀者能從基本概念一路理解研究證據。
 
-1. [Paper 1｜聲音與恐怖情緒](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-1.html)
-2. [Paper 2｜預測處理與恐怖片](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-2.html)
-3. [Paper 3｜恐怖場景中的興奮與享受](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-3.html)
-4. [Paper 4｜恐怖電影心理反應研究綜述](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-4.html)
-5. [Paper 5｜Need for Affect 與恐怖觀影](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/paper-5.html)
+- [開啟整合版教學 HTML 簡報](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/horror-lab-teaching.html)
+- [整合版 HTML 原始檔](./slides/horror-lab-teaching.html)
 
-[五份簡報總覽頁](./slides/horror-lab-research.html)
+`slides/paper-1.html` 至 `slides/paper-5.html` 為先前製作的個別研究補充頁，不是本次作業的主要繳交成果。
 
 ## 4. Loop／Graph 設計
 
@@ -63,7 +60,7 @@ AI 提出簡報大綱
 | 逐頁生成 | 已確認大綱 | 每頁標題、說明與引用 | 逐頁回查 Wiki 與 DOI |
 | HTML 生成 | 已確認的投影片內容 | HTML 簡報 | 瀏覽器、可讀性與引用檢查 |
 
-Graph 的節點包含來源、研究概念、Wiki 條目、簡報大綱、逐頁內容、檔案驗證與投影片主張；邊表示支持、提出框架、轉換或通過檢查。完整 Graph 見 [`workflow/graph.json`](./workflow/graph.json)。
+Graph 的節點包含五篇來源、研究證據類型、研究概念、Wiki 條目、整合簡報大綱、逐頁內容、檔案驗證與投影片主張；邊表示支持、提出框架、轉換或通過檢查。完整 Graph 見 [`workflow/graph.json`](./workflow/graph.json)，可直接使用的 Graph 生成指令見 [`workflow/graph-generation-prompt.md`](./workflow/graph-generation-prompt.md)。
 
 Loop 會重複執行來源驗證、引用回查與瀏覽器驗收。若 PDF 檢查失敗，退回來源驗證；若主張找不到引用，退回 Wiki 整理；若大綱不適合初學者，退回大綱設計；若 HTML 顯示錯誤，退回逐頁生成。
 
