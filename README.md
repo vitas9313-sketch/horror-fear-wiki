@@ -1,40 +1,21 @@
 # HORROR LAB｜LLM Wiki
 
-## 專案簡介
+本專案以「恐怖心理與恐怖敘事中的觀眾反應」為主題，將可追溯來源整理成 Wiki 草稿，並用 Wiki 產生入門教學型 HTML 簡報。
 
-HORROR LAB｜LLM Wiki 是一個以恐怖文化、恐怖敘事與作品研究為核心的可持續維護知識專案。專案將在查證、引用與著作權規則下，逐步建立適合讀者閱讀、也適合 AI 協作維護的 Wiki 結構。
+## 目前成果
 
-## 預定成果
+- 5 篇 PDF 已登錄並通過標頭、頁數與 SHA-256 檢查。
+- 5 篇來源各自對應 1 篇 Wiki 草稿，詳見 [`workflow/ingest-manifest.json`](./workflow/ingest-manifest.json)。
+- [`slides/horror-lab-research.html`](./slides/horror-lab-research.html) 為可直接瀏覽的教學簡報。
+- [`workflow/graph.json`](./workflow/graph.json) 與 [`workflow/loop-checklist.md`](./workflow/loop-checklist.md) 說明資料取得、驗證、整理與生成流程。
+- [`reports/submission-notes.md`](./reports/submission-notes.md) 可作為課程作業提交說明。
 
-- 建立六大知識主題的可追溯 Wiki。
-- 建立來源、引用、衝突處理與內容維護流程。
-- 在後續獲准階段製作以 Wiki 為基礎的 HTML 簡報。
-- 在後續獲准階段設計可解釋的 Graph / Loop 關聯與工作流程。
+## 目錄
 
-## 目前進度
+- `raw/papers/`：原始 PDF；只保留來源檔，不在此直接改寫。
+- `wiki/`：帶有來源、證據與限制段落的 Wiki 草稿。
+- `workflow/`：來源登錄、ingest manifest、Graph 與 Loop 檢查。
+- `slides/`：教學型 HTML 簡報。
+- `reports/`：候選來源與提交驗收說明。
 
-### 第一階段：專案基礎架構
-
-已建立：
-
-- `AGENTS.md`：AI 工作規則與階段限制。
-- `README.md`：專案說明與進度。
-- `.gitignore`：暫存檔、機密資料與建置產物排除規則。
-- `raw/`、`wiki/`、`workflow/`、`slides/`、`reports/`：後續階段使用的空目錄。
-
-### 第二階段：候選資料與受控來源整理
-
-已完成：
-
-- `reports/candidate-sources.md`：候選學術資料清單。
-- `raw/papers/`：三篇使用者提供的 PDF 原始檔案。
-- `workflow/source-register.md`：來源、版本、授權、頁數與 SHA-256 登錄。
-- `workflow/ingest-manifest.json`：受控 ingest 對應表。
-- `wiki/`：三篇依摘要與書目建立的草稿條目。
-- `workflow/graph.json`：具證據邊界的關係草稿。
-- `workflow/loop-checklist.md`：來源與條目重複檢查流程。
-- `slides/horror-lab-research.html`：以已查證內容製作的研究來源導覽草稿。
-
-目前限制：三篇 Wiki 條目仍待逐段全文複核；尚未建立完整自動化 Graph / Loop 執行程式、部署網站或建立正式發布版本。所有新增檔案目前尚未 commit 或 push。
-
-詳細工作規則請先閱讀 [`AGENTS.md`](./AGENTS.md)。
+完整工作規則請先閱讀 [`AGENTS.md`](./AGENTS.md)。

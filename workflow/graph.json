@@ -1,24 +1,33 @@
 {
-  "schema_version": "1.0",
-  "status": "draft",
-  "nodes": [
-    {"id": "topic-sound", "type": "topic", "label": "影像、聲音與感官設計"},
-    {"id": "topic-psychology", "type": "topic", "label": "恐怖心理"},
-    {"id": "source-p000", "type": "source", "label": "P-000: Film soundtracks and nonlinear analogues"},
-    {"id": "source-p001", "type": "source", "label": "P-001: Predictive processing and horror films"},
-    {"id": "source-p002", "type": "source", "label": "P-002: Excitement and enjoyment in horror scenes"},
-    {"id": "concept-nonlinearity", "type": "concept", "label": "非線性聲音類比"},
-    {"id": "concept-uncertainty", "type": "concept", "label": "不確定性與預測處理"},
-    {"id": "concept-recreational-fear", "type": "concept", "label": "娛樂性恐懼"}
+  "schema_version":"1.0",
+  "status":"draft",
+  "nodes":[
+    {"id":"topic-psychology","type":"topic","label":"Horror psychology and audience response"},
+    {"id":"topic-sound","type":"topic","label":"Sound and sensory design"},
+    {"id":"source-p000","type":"source","label":"P-000 Film soundtracks and nonlinear analogues"},
+    {"id":"source-p001","type":"source","label":"P-001 Predictive processing and horror films"},
+    {"id":"source-p002","type":"source","label":"P-002 Excitement and enjoyment in horror scenes"},
+    {"id":"source-p003","type":"source","label":"P-003 Martin review of horror psychology"},
+    {"id":"source-p004","type":"source","label":"P-004 Need for affect in horror and drama"},
+    {"id":"concept-uncertainty","type":"concept","label":"Prediction error and uncertainty"},
+    {"id":"concept-arousal","type":"concept","label":"Arousal, fear and enjoyment"},
+    {"id":"concept-meta-emotion","type":"concept","label":"Meta-emotion"},
+    {"id":"process-file-check","type":"process","label":"PDF header, page count and SHA-256 check"},
+    {"id":"process-slide-check","type":"process","label":"Claim and source cross-check"}
   ],
-  "edges": [
-    {"from": "source-p000", "to": "topic-sound", "relation": "supports-topic", "evidence": "DOI 10.1098/rsbl.2010.0333"},
-    {"from": "source-p000", "to": "concept-nonlinearity", "relation": "studies", "evidence": "abstract and source record"},
-    {"from": "concept-nonlinearity", "to": "topic-psychology", "relation": "may-affect", "evidence": "source abstract; causal scope limited"},
-    {"from": "source-p001", "to": "topic-psychology", "relation": "supports-topic", "evidence": "DOI 10.1098/rstb.2022.0425"},
-    {"from": "source-p001", "to": "concept-uncertainty", "relation": "proposes-framework", "evidence": "source abstract"},
-    {"from": "source-p002", "to": "topic-psychology", "relation": "supports-topic", "evidence": "DOI 10.1038/s41598-024-53533-y"},
-    {"from": "source-p002", "to": "concept-recreational-fear", "relation": "measures", "evidence": "abstract; N=558"},
-    {"from": "concept-uncertainty", "to": "concept-recreational-fear", "relation": "offers-interpretation", "evidence": "cross-source link; requires later synthesis"}
+  "edges":[
+    {"from":"source-p000","to":"topic-sound","relation":"supports-topic","evidence":"10.1098/rsbl.2010.0333"},
+    {"from":"source-p001","to":"concept-uncertainty","relation":"proposes-framework","evidence":"10.1098/rstb.2022.0425"},
+    {"from":"source-p002","to":"concept-arousal","relation":"measures","evidence":"10.1038/s41598-024-53533-y"},
+    {"from":"source-p003","to":"topic-psychology","relation":"reviews-evidence","evidence":"10.3389/fpsyg.2019.02298"},
+    {"from":"source-p004","to":"concept-meta-emotion","relation":"tests","evidence":"10.1177/0093650209356441"},
+    {"from":"source-p003","to":"concept-arousal","relation":"synthesizes","evidence":"review conclusions; heterogeneous methods"},
+    {"from":"concept-uncertainty","to":"concept-arousal","relation":"may-shape","evidence":"cross-source interpretation; not a direct causal claim"},
+    {"from":"source-p000","to":"process-file-check","relation":"passes-through","evidence":"local PDF hash"},
+    {"from":"source-p001","to":"process-file-check","relation":"passes-through","evidence":"local PDF hash"},
+    {"from":"source-p002","to":"process-file-check","relation":"passes-through","evidence":"local PDF hash"},
+    {"from":"source-p003","to":"process-file-check","relation":"passes-through","evidence":"local PDF hash"},
+    {"from":"source-p004","to":"process-file-check","relation":"passes-through","evidence":"local PDF hash"},
+    {"from":"process-file-check","to":"process-slide-check","relation":"gates","evidence":"only verified sources become slide claims"}
   ]
 }

@@ -1,61 +1,20 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HORROR LAB｜研究來源導覽</title>
-  <style>
-    :root { --ink:#f4f0e8; --muted:#b7b0a4; --blood:#d44b45; --panel:#171817; --bg:#0b0d0c; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:radial-gradient(circle at 70% 20%, #2a1918 0, var(--bg) 42%); color:var(--ink); font-family:Georgia, "Noto Serif TC", serif; }
-    main { max-width:1100px; margin:auto; padding:7vw 7vw 10vw; }
-    .eyebrow { color:var(--blood); letter-spacing:.18em; text-transform:uppercase; font:700 .75rem system-ui,sans-serif; }
-    h1 { max-width:780px; font-size:clamp(2.7rem,7vw,6.5rem); line-height:.95; margin:.5rem 0 1.5rem; }
-    h2 { font-size:clamp(1.7rem,3vw,3rem); margin-top:0; }
-    p, li { color:var(--muted); font-size:1.05rem; line-height:1.75; }
-    .deck { min-height:90vh; display:grid; align-content:center; }
-    .rule { border:0; border-top:1px solid #46312e; margin:3rem 0; }
-    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
-    .card { background:linear-gradient(145deg,var(--panel),#111211); border:1px solid #3b2b2a; border-radius:14px; padding:1.4rem; min-height:250px; }
-    .card strong { color:var(--ink); display:block; margin:.5rem 0 1rem; font-size:1.15rem; }
-    .tag { color:var(--blood); font:700 .75rem system-ui,sans-serif; letter-spacing:.12em; }
-    a { color:#f0a59e; }
-    footer { border-top:1px solid #46312e; margin-top:5rem; padding-top:1.5rem; }
-    @media (max-width:760px) { .grid { grid-template-columns:1fr; } p,li { font-size:1rem; } }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HORROR LAB｜為什麼人會享受恐怖？</title>
+<style>
+:root{--bg:#111014;--panel:#211b27;--ink:#f6f0e8;--muted:#c8b9c9;--accent:#ff5b7f;--line:#58425d}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 system-ui,-apple-system,"Noto Sans TC",sans-serif}main{max-width:980px;margin:auto;padding:28px 18px}section{min-height:82vh;padding:42px 8px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}h1,h2{line-height:1.2;margin:.2em 0 .5em}h1{font-size:clamp(2.5rem,7vw,5.5rem);color:var(--accent)}h2{font-size:clamp(1.8rem,4vw,3rem)}p{max-width:780px}.tag{color:var(--accent);letter-spacing:.12em;text-transform:uppercase}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}.card h3{margin-top:0;color:#ffd3dc}.note{color:var(--muted);font-size:.9em}.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.step{background:var(--panel);padding:12px 15px;border-radius:8px;border:1px solid var(--line)}a{color:#ffc2cf}a:focus{outline:3px solid #fff;outline-offset:3px}footer{padding:32px 8px;color:var(--muted)}
+</style>
 </head>
-<body>
-  <main>
-    <section class="deck">
-      <div class="eyebrow">HORROR LAB · source review</div>
-      <h1>恐怖為何<br>令人著迷？</h1>
-      <p>三篇已登錄的研究，從聲音、預測處理與觀眾情緒，提供可追溯的研究入口。</p>
-      <p class="eyebrow">DRAFT · 待全文逐段複核</p>
-    </section>
-
-    <hr class="rule">
-    <section>
-      <div class="eyebrow">01 · 三條證據路徑</div>
-      <h2>從聲音刺激，到恐懼經驗</h2>
-      <div class="grid">
-        <article class="card"><span class="tag">P-000 · SOUND</span><strong>非線性聲音類比</strong><p>研究將電影聲軌中的非線性聲學特徵與情緒操控問題連結，恐怖片的噪聲與尖叫是重要觀察對象。</p><a href="https://doi.org/10.1098/rsbl.2010.0333">查看 DOI</a></article>
-        <article class="card"><span class="tag">P-001 · PSYCHOLOGY</span><strong>不確定性與預測處理</strong><p>理論文章提出預測處理框架，嘗試解釋恐怖內容如何在恐懼與趣味之間形成可承受的參與區間。</p><a href="https://doi.org/10.1098/rstb.2022.0425">查看 DOI</a></article>
-        <article class="card"><span class="tag">P-002 · AUDIENCE</span><strong>興奮與享受的區分</strong><p>研究以 558 位參與者評估恐怖場景，將 excitement 與 enjoyment 視為相關但不同的結果。</p><a href="https://doi.org/10.1038/s41598-024-53533-y">查看 DOI</a></article>
-      </div>
-    </section>
-
-    <hr class="rule">
-    <section>
-      <div class="eyebrow">02 · 讀取限制</div>
-      <h2>證據有邊界，草稿也要誠實</h2>
-      <ul>
-        <li>三篇來源已保存於 <code>raw/papers/</code>，並以 SHA-256 登錄。</li>
-        <li>目前條目依書目與摘要建立；具體頁碼、表格與統計細節仍待逐段全文複核。</li>
-        <li>這份簡報不取代來源，也不把研究結果改寫成所有觀眾都適用的定律。</li>
-      </ul>
-    </section>
-
-    <footer><p>HORROR LAB｜LLM Wiki · research draft · 2026-11-19</p></footer>
-  </main>
-</body>
-</html>
+<body><main>
+<section aria-labelledby="title"><p class="tag">HORROR LAB｜教學型 HTML 簡報</p><h1 id="title">為什麼人會享受恐怖？</h1><p>恐怖作品讓人害怕，卻也可能讓人興奮、投入，甚至感到享受。本簡報用五篇已登錄研究，帶你分辨「恐懼」「興奮」「享受」與「對情緒的評價」。</p><p class="note">適合第一次接觸恐怖心理與恐怖敘事研究的讀者。</p></section>
+<section aria-labelledby="q"><p class="tag">01｜先拆開問題</p><h2 id="q">害怕不等於不喜歡</h2><div class="grid"><article class="card"><h3>刺激</h3><p>聲音、畫面、節奏與未知感，可能提高警覺。</p></article><article class="card"><h3>當下情緒</h3><p>恐懼、焦慮、厭惡與興奮可能同時出現。</p></article><article class="card"><h3>事後評價</h3><p>觀眾可能覺得「我不舒服，但這段經驗很值得」。</p></article></div><p class="note">因此「享受恐怖」不是把恐懼消除，而可能是對整體觀影經驗的評價。</p></section>
+<section aria-labelledby="brain"><p class="tag">02｜一個理解框架</p><h2 id="brain">大腦在處理不確定性</h2><p>預測處理的觀點把恐怖看成「預測與感知之間的落差」：觀眾根據線索建立期待，突發聲音、遮蔽資訊或不穩定視角會提高預測誤差。</p><div class="flow"><span class="step">線索</span><span>→</span><span class="step">預測</span><span>→</span><span class="step">落差</span><span>→</span><span class="step">警覺／投入</span></div><p class="note">這是解釋框架，不代表每一種恐怖效果都已被單一實驗證明。</p></section>
+<section aria-labelledby="evidence"><p class="tag">03｜五篇研究各自回答什麼</p><h2 id="evidence">把證據放回它的範圍</h2><div class="grid"><article class="card"><h3>P-000｜聲音</h3><p>研究電影聲音中的非線性類比，連到感官與情緒設計。</p></article><article class="card"><h3>P-001｜預測</h3><p>提出以預測處理與不確定性理解尖叫與恐怖反應的框架。</p></article><article class="card"><h3>P-002｜場景反應</h3><p>分析恐怖片段中的興奮與享受之主觀評價。</p></article><article class="card"><h3>P-003｜綜述</h3><p>整理恐怖心理研究，提醒個體、刺激與方法差異。</p></article><article class="card"><h3>P-004｜後設情緒</h3><p>實地研究 Need for Affect 與恐怖／戲劇觀影中的情緒評價。</p></article></div></section>
+<section aria-labelledby="takeaway"><p class="tag">04｜三個帶得走的結論</p><h2 id="takeaway">不要用單一原因解釋恐怖</h2><ol><li>恐怖感受是多層的：感官刺激、心理預測、當下情緒與事後評價會互相作用。</li><li>「喜歡恐怖」可能包含尋求刺激、接受負面情緒，以及對情緒經驗的正面評價。</li><li>研究結果有範圍：樣本、片段、文化與測量方法不同，不能直接推廣到所有觀眾。</li></ol></section>
+<section aria-labelledby="workflow"><p class="tag">05｜這份簡報怎麼生成</p><h2 id="workflow">Loop / Graph：每一個主張都要回得去</h2><div class="flow"><span class="step">取得 5 篇資料</span><span>→</span><span class="step">PDF／SHA 檢查</span><span>→</span><span class="step">Wiki 條目</span><span>→</span><span class="step">主張回查</span><span>→</span><span class="step">HTML</span></div><p>Graph 的節點是來源、概念、Wiki 條目與投影片；邊表示「支持」「提出框架」或「限制」。Loop 會重複執行檔案驗證、引用回查與瀏覽驗收。最常出錯的是下載檔案誤收 HTML，因此我把 PDF 標頭檢查移到 ingest 之前。</p></section>
+<section aria-labelledby="sources"><p class="tag">06｜來源與限制</p><h2 id="sources">從 Wiki 繼續閱讀</h2><p>五篇來源與五篇條目均保留在專案中：<a href="../workflow/ingest-manifest.json">ingest manifest</a>、<a href="../wiki/">Wiki 條目</a>、<a href="../workflow/graph.json">Graph</a>、<a href="../workflow/loop-checklist.md">Loop 檢查紀錄</a>。</p><p class="note">本簡報是研究導讀，不是醫療建議；所有結論都應回到原始來源與條目的限制段落。</p></section>
+<footer>HORROR LAB｜靜態、無外部素材、支援行動裝置閱讀。</footer>
+</main></body></html>
