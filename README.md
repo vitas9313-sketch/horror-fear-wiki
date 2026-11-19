@@ -25,6 +25,8 @@ Wiki 成果位於 [`wiki/`](./wiki/) 資料夾，共有五篇條目。每篇包�
 - [開啟整合版教學 HTML 簡報](https://htmlpreview.github.io/?https://raw.githubusercontent.com/vitas9313-sketch/horror-fear-wiki/main/slides/horror-lab-teaching.html)
 - [整合版 HTML 原始檔](./slides/horror-lab-teaching.html)
 
+封面圖案為本專案自行繪製的 inline SVG，未使用外部圖片、電影海報、角色、商標或下載素材。
+
 `slides/paper-1.html` 至 `slides/paper-5.html` 為先前製作的個別研究補充頁，不是本次作業的主要繳交成果。
 
 ## 4. Loop／Graph 設計
